@@ -12,7 +12,6 @@ export default function Home() {
       <Carding />
       <Xidmet />
       <Reklam />
-     
     </main>
   );
 }

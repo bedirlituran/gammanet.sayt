@@ -15,20 +15,20 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex justify-between item-center  bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-16">
-        <nav className="flex lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full">
-          <div className="">
+      <div className="px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-16">
+        <nav className="flex justify-around items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm">
+          <div>
             <Image
               src="/image/logo.png"
-              width="70"
-              height="70"
+              width="100"
+              height="100"
               objectFit="cover"
               alt=""
-              className="bg-transparent rounded-2xl flex lg:flex md:mr-4 "
+              className="bg-transparent rounded-2xl flex items-center justify-center "
             />
           </div>
-          <div className="hidden items-center lg:flex ">
-            <ul className="flex items-center lg:gap-4 lg:text-sm">
+          <div className="hidden lg:flex lg:items-center lg:justify-center">
+            <ul className="lg:flex lg:items-center lg:justify-between lg:gap-3 lg:text-sm">
               <li>
                 <Link
                   href="/"
@@ -60,12 +60,10 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex  items-center justify-end lg:justify-end gap-4 ">
-            {/* //gece gunduz tema deyisimi */}
-            <div className="flex items-center ml-[260px] md:hidden lg:block">
-              {" "}
+          <div className="flex  items-center gap-4 ">
+           
               <ThemeComp />
-            </div>
+            
 
             <BiPhoneCall
               size={25}
