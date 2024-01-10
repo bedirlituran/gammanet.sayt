@@ -5,14 +5,14 @@ import Image from "next/image";
 const Card2 = () => {
   return (
     <div className="relative flex flex-col items-center justify-center h-full cursor-pointer group transition-all duration-500  ">
-      <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  font-bold text-gray-950 text-3xl z-50 group-hover:top-0   transition-all duration-500">
-        Internet + Tv
+      <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  font-bold text-gray-950 text-3xl z-10 group-hover:top-5   transition-all duration-500">
+        TV
       </h1>
       <div>
         <Image
-          src="/image/xidmet1.png"
-          width={400}
-          height={400}
+          src="/image/xidmet5.png"
+          width={350}
+          height={350}
           alt=""
           objectFit="cover"
           className="rounded-xl group-hover:scale-105  ease-in-out opacity-50 hover:opacity-100 transition duration-500"

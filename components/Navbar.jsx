@@ -28,7 +28,7 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden lg:flex lg:items-center lg:justify-center">
-            <ul className="lg:flex lg:items-center lg:justify-between lg:gap-3 lg:text-sm">
+            <ul className="lg:flex lg:items-center lg:justify-between  lg:text-sm  lg:gap-6 ">
               <li>
                 <Link
                   href="/"
