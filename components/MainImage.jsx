@@ -20,7 +20,7 @@ function MainImage() {
         quality={75}
         width={1920}
         height={880}
-        objectFit='cover' // ya da 'contain' kullanabilirsiniz
+        objectFit='cover'
         alt=""
         className='inset-0 bg-gradient-to-r from-gray-100 to-gray-400'
       />

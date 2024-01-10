@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <div className="px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-16">
-        <nav className="flex justify-around items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm">
+        <nav className="flex justify-around items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
           <div>
             <Image
               src="/image/logo.png"
@@ -28,7 +28,7 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden lg:flex lg:items-center lg:justify-center">
-            <ul className="lg:flex lg:items-center lg:justify-between  lg:text-sm  lg:gap-6 ">
+            <ul className="lg:flex lg:items-center lg:justify-between  lg:text-sm  lg:gap-8 ">
               <li>
                 <Link
                   href="/"
