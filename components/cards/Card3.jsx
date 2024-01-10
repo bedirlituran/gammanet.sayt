@@ -6,11 +6,11 @@ const Card3 = () => {
   return (
     <div className="relative flex flex-col items-center justify-center h-full cursor-pointer group ">
       <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  font-bold text-gray-950 text-3xl z-10 group-hover:top-0   transition-all duration-500">TV</h1>
-      <div className="w-[400px] h-[500px]">
+      <div>
 
 
         <Image
-          src="/image/xidmet3.jpg"
+          src="/image/xidmet3.png"
           width={400}
           height={500}
           alt=""

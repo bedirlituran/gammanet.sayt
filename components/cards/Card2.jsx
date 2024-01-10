@@ -8,9 +8,9 @@ const Card2 = () => {
       <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  font-bold text-gray-950 text-3xl z-50 group-hover:top-0   transition-all duration-500">
         Internet + Tv
       </h1>
-      <div className="w-[400px] h-[500px]">
+      <div>
         <Image
-          src="/image/xidmet1.jpg"
+          src="/image/xidmet1.png"
           width={400}
           height={500}
           alt=""
