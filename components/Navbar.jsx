@@ -20,14 +20,15 @@ const Navbar = () => {
           <div className="">
             <Image
               src="/image/logo.png"
-              width="100"
-              height="100"
+              width="70"
+              height="70"
+              objectFit="cover"
               alt=""
               className="bg-transparent rounded-2xl flex lg:flex md:mr-4 "
             />
           </div>
           <div className="hidden items-center lg:flex ">
-            <ul className="flex items-center lg:gap-4">
+            <ul className="flex items-center lg:gap-4 lg:text-sm">
               <li>
                 <Link
                   href="/"
