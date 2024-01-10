@@ -15,8 +15,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex justify-between item-center px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-auto">
-        <nav className="flex flex-nowrap justify-between  h-16 items-center sticky top-0 p-2 uppercase font-bold space-x-3 min-w-full">
+      <div className="flex justify-between item-center  bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-16">
+        <nav className="flex lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full">
           <div className="">
             <Image
               src="/image/logo.png"
