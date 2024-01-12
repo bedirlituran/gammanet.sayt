@@ -20,9 +20,9 @@ const ThemeComp = () => {
           <div>
             {
               themeMode === "dark" ? (
-                <CiLight onClick={() => setTheme("light")} size={25} className='cursor-pointer' />
+                <CiLight onClick={() => setTheme("light")} size={25} className='cursor-pointer hidden lg:block' />
               ) : (
-                <CiDark onClick={() => setTheme("dark")} size={25} className='cursor-pointer' color='white' />
+                <CiDark onClick={() => setTheme("dark")} size={25} className='cursor-pointer hidden lg:block' color='black' />
               )
             }
           </div>

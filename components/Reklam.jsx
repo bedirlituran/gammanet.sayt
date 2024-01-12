@@ -13,6 +13,7 @@ const Reklam = () => {
             objectFit="cover"
             quality={75}
             alt=""
+            className="object-cover"
           />
         </div>
         <div className="lg:flex  basis-1/2 justify-center items-center flex-col space-y-8">

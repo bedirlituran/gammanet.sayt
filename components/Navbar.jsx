@@ -15,8 +15,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="px-4 bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800 transition-colors duration-500 fixed top-0 z-50 w-full h-16">
-        <nav className="flex justify-around items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
+      <div className="flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-20 sticky top-0 z-50">
+        <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
           <div>
             <Image
               src="/image/logo.png"
@@ -32,28 +32,28 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                   Ana Səhifə
                 </Link>
               </li>
               <li>
                 <Link
                   href="/haqqında"
-                  className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                   Haqqında
                 </Link>
               </li>
               <li>
                 <Link
                   href="/xidmətlər"
-                  className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                   Xidmətlər
                 </Link>
               </li>
               <li>
                 <Link
                   href="/layihələr"
-                  className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                   Layihələr
                 </Link>
               </li>
@@ -67,19 +67,19 @@ const Navbar = () => {
 
             <BiPhoneCall
               size={25}
-              color="white"
+              color="black"
               className="hidden lg:block transition-all duration-500 cursor-pointer hover:text-blue-500"
             />
 
-            <p className="text-gray-100 hover:text-blue-500 cursor-pointer  hidden lg:block transition-all duration-500">
+            <p className="text-black hover:text-blue-500 cursor-pointer  hidden lg:block transition-all duration-500">
               (012)610 48 88
             </p>
             <CiMail
               size={25}
-              color="white"
+              color="black"
               className="hidden md:hidden lg:block transition-all duration-500 cursor-pointer hover:text-blue-500"
             />
-            <p className="text-gray-100 hover:text-blue-500 hidden lg:block transition-all duration-500 cursor-pointer md:hidden">
+            <p className="text-black hover:text-blue-500 hidden lg:block transition-all duration-500 cursor-pointer md:hidden">
               gamma_net@mail.ru
             </p>
           </div>
@@ -90,10 +90,10 @@ const Navbar = () => {
               {isClick ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 transition-all duration-500 "
+                  className="h-8 w-8 transition-all duration-500 "
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="black">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -104,10 +104,10 @@ const Navbar = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 transition-all duration-500"
+                  className="h-8 w-8 transition-all duration-500"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  stroke="black">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -121,34 +121,34 @@ const Navbar = () => {
 
         </nav>
         {isClick && (
-          <div className="lg:hidden fixed top-16 left-0 right-0  w-full bg-gradient-to-r from-gray-800 via-gray-900 to-blue-800  translate-x-0 transition-translate duration-1000">
+          <div className="lg:hidden fixed top-20 left-0 right-0  w-full bg-gray-200  translate-x-0 transition-translate duration-1000">
             <div className=" px-2 pt-2 pb-3 space-y-3 sm:px-3 ">
               <ul className="space-y-6  flex flex-col items-center justify-start">
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                    className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                     Ana Səhifə
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/haqqında"
-                    className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                    className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                     Haqqında
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/xidmətlər"
-                    className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                    className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                     Xidmətlər
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/layihələr"
-                    className="text-gray-100 hover:text-blue-500 tracking-wider transition-all duration-500">
+                    className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
                     Layihələr
                   </Link>
                 </li>
