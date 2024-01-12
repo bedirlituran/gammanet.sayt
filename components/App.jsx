@@ -1,5 +1,6 @@
-import React from 'react'
-
+"use client";
+import React,{useState} from 'react'
+import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
 const App = () => {
  
   const slides = [
@@ -10,11 +11,23 @@ const App = () => {
     { url: 'https://media.istockphoto.com/id/1460848181/photo/black-couple-watches-professional-soccer-match-on-tv-sitting-on-a-couch-at-home-in-the.jpg?s=1024x1024&w=is&k=20&c=ZoWh6of2IIh2615Ogt8ur9V6VGC8GYzhXcBQTFAwu20=' },
     
   ]
+
+  const [current, setCurrent] = useState(0);
+  const prevSlide = () => {
+    setCurrent(current === 0 ? slides.length - 1 : current - 1);
+
+  };
+  const nextSlide = () => {
+    setCurrent(current === slides.length - 1 ? 0 : current + 1);
+  };
+
   
   return (
     <div className='max-w-[1400px] h-[450px] lg:h-[635px]  w-full m-auto   relative'>
-      <div style={{backgroundImage:`url(${slides[0].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover  duration-500'></div>
+      <div style={{backgroundImage:`url(${slides[current].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover  duration-500'></div>
       
+      <BsChevronCompactLeft onClick={prevSlide} className='absolute top-1/2 left-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
+      <BsChevronCompactRight onClick={nextSlide}  className='absolute top-1/2 right-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
     </div>
   )
 }
