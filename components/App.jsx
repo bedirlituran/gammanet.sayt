@@ -1,6 +1,8 @@
 "use client";
 import React,{useState} from 'react'
 import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
+import { GoDotFill } from "react-icons/go";
+
 const App = () => {
  
   const slides = [
@@ -32,6 +34,11 @@ const App = () => {
       
       <BsChevronCompactLeft onClick={prevSlide} className='absolute top-1/2 left-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
       <BsChevronCompactRight onClick={nextSlide}  className='absolute top-1/2 right-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
+      <div className='absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-2 mb-2'>
+        {slides.map((slide, index) => (
+          <GoDotFill key={index} className={`text-2xl text-white cursor-pointer ${index === current ? 'text-green-900' : ''}`} onClick={() => setCurrent(index)} />
+        ))}
+        </div>
     </div>
   )
 }
