@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-20 sticky top-0 z-50">
+      <div className="flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-18 sticky top-0 z-50">
         <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
           <div>
             <Image
@@ -121,7 +121,7 @@ const Navbar = () => {
 
         </nav>
         {isClick && (
-          <div className="lg:hidden fixed top-20 left-0 right-0  w-full bg-gray-200  translate-x-0 transition-translate duration-1000">
+          <div className="lg:hidden fixed top-18 left-0 right-0  w-full bg-gray-200  translate-x-0 transition-translate duration-1000">
             <div className=" px-2 pt-2 pb-3 space-y-3 sm:px-3 ">
               <ul className="space-y-6  flex flex-col items-center justify-start">
                 <li>
