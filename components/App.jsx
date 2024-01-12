@@ -14,17 +14,21 @@ const App = () => {
 
   const [current, setCurrent] = useState(0);
   const prevSlide = () => {
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
+    const isFirstSlide = current === 0;
+    const index = isFirstSlide ? slides.length - 1 : current - 1;
+    setCurrent(index);
 
   };
   const nextSlide = () => {
-    setCurrent(current === slides.length - 1 ? 0 : current + 1);
+    const isLastSlide = current === slides.length - 1;
+    const index = isLastSlide ? 0 : current + 1;
+    setCurrent(index);
   };
 
   
   return (
     <div className='max-w-[1400px] h-[450px] lg:h-[635px]  w-full m-auto   relative'>
-      <div style={{backgroundImage:`url(${slides[current].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover  duration-500'></div>
+      <div style={{backgroundImage:`url(${slides[current].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover  duration-500 m-auto'></div>
       
       <BsChevronCompactLeft onClick={prevSlide} className='absolute top-1/2 left-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
       <BsChevronCompactRight onClick={nextSlide}  className='absolute top-1/2 right-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
