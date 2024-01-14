@@ -1,3 +1,4 @@
+
 import React from "react";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { FaInternetExplorer } from "react-icons/fa";
@@ -36,7 +37,7 @@ const Card = ({ icon, stat, orta, asagi,link }) => {
   };
 
   const links = {
-    reqemsal: "/reqemsal",
+    reqemsal: "/Reqemsal",
     tarif: "/tarifler",
     gammatv: "/gammatv",
     million: "/million",
