@@ -72,7 +72,7 @@ const Card = ({ icon, stat, orta, asagi,link }) => {
             
           </div>
           <div className="mt-20">
-          <Link href="/" className="m-auto mt-10  rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-2xl hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-turan uppercase">Qoşul</Link>
+          <Link href="/Muraciet" className="m-auto mt-10  rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-2xl hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-turan uppercase">Qoşul</Link>
           </div>
          
         </div>
