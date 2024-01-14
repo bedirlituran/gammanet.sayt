@@ -9,20 +9,7 @@ function classNames(...classes) {
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false)
-  const [telefonNumarasi, setTelefonNumarasi] = useState("+994");
-
-  const handleTelefonChange = (e) => {
-    // Kullanıcıdan gelen değeri al
-    const yeniDeger = e.target.value;
-
-    // Eğer değer "+994" ile başlıyorsa, "+994" parçasını kaldır
-    if (yeniDeger.startsWith("+994")) {
-      setTelefonNumarasi(yeniDeger.substring(4));
-    } else {
-      // Değer "+994" ile başlamıyorsa, başına "+994" ekle
-      setTelefonNumarasi("+994" + yeniDeger);
-    }
-  };
+  
 
   return (
     <div className="isolate bg-gray-200 px-6 py-24 sm:py-32 lg:px-8">
@@ -100,8 +87,7 @@ export default function Example() {
           id="phone-number"
           autoComplete="tel"
           className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-          value={telefonNumarasi}
-          onChange={handleTelefonChange}
+          placeholder='+994 50 123 45 67'
         />
       </div>
     </div>
