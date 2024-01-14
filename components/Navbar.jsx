@@ -15,8 +15,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-18 sticky top-0 z-50">
-        <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-16 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
+      <div className=" file:flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-18 sticky top-0 z-50">
+        <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-18 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
           <div>
             <Image
               src="/image/logo.png"
@@ -32,28 +32,28 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 hover:border-b border-blue-500 tracking-wider transition-all duration-500">
                   Ana Səhifə
                 </Link>
               </li>
               <li>
                 <Link
                   href="/haqqında"
-                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 hover:border-b border-blue-500 tracking-wider transition-all duration-500">
                   Haqqında
                 </Link>
               </li>
               <li>
                 <Link
                   href="/xidmətlər"
-                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 hover:border-b border-blue-500 tracking-wider transition-all duration-500">
                   Xidmətlər
                 </Link>
               </li>
               <li>
                 <Link
                   href="/layihələr"
-                  className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
+                  className="text-black hover:text-blue-500 hover:border-b border-blue-500 tracking-wider transition-all duration-500">
                   Layihələr
                 </Link>
               </li>
@@ -121,13 +121,13 @@ const Navbar = () => {
 
         </nav>
         {isClick && (
-          <div className="lg:hidden fixed top-18 left-0 right-0  w-full bg-gray-200  translate-x-0 transition-translate duration-1000">
-            <div className=" px-2 pt-2 pb-3 space-y-3 sm:px-3 ">
+          <div className="absolute lg:hidden z-50 top-18 left-0 right-0   w-full bg-gray-200  translate-x-0 transition-translate duration-1000">
+            <div className=" px-2 pt-2 pb-3 space-y-3 sm:px-3 top-18  ">
               <ul className="space-y-6  flex flex-col items-center justify-start">
                 <li>
                   <Link
                     href="/"
-                    className="text-black hover:text-blue-500 tracking-wider transition-all duration-500">
+                    className="text-black hover:text-blue-500 hover:border-b border-black tracking-wider transition-all duration-500">
                     Ana Səhifə
                   </Link>
                 </li>
