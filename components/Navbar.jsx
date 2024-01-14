@@ -71,17 +71,17 @@ const Navbar = () => {
               className="hidden lg:block transition-all duration-500 cursor-pointer hover:text-blue-500"
             />
 
-            <p className="text-black hover:text-blue-500 cursor-pointer  hidden lg:block transition-all duration-500">
-              (012)610 48 88
-            </p>
+<a href="tel:+994126104888" className="text-black hover:text-blue-500 cursor-pointer hidden lg:block transition-all duration-500">
+  (012) 610 48 88
+</a>
             <CiMail
               size={25}
               color="black"
               className="hidden md:hidden lg:block transition-all duration-500 cursor-pointer hover:text-blue-500"
             />
-            <p className="text-black hover:text-blue-500 hidden lg:block transition-all duration-500 cursor-pointer md:hidden">
-              gamma_net@mail.ru
-            </p>
+           <a href="mailto:gamma_net@mail.ru" className="text-black hover:text-blue-500 hidden lg:block transition-all duration-500 cursor-pointer md:hidden">
+  gamma_net@mail.ru
+</a>
           </div>
           <div className="lg:hidden flex items-center">
             <button

@@ -36,7 +36,7 @@ const Slide = () => {
       <BsChevronCompactRight onClick={nextSlide}  className='absolute top-1/2 right-0 text-5xl text-white cursor-pointer hover:text-gray-500 duration-500'/>
       <div className='absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-2 mb-2'>
         {slides.map((slide, index) => (
-          <GoDotFill key={index} className={`text-2xl text-white cursor-pointer ${index === current ? 'text-green-900' : ''}`} onClick={() => setCurrent(index)} />
+          <GoDotFill key={index} className={`text-2xl  text-black cursor-pointer ${index === current ? 'text-white transition-all duration-500'  : ''}`} onClick={() => setCurrent(index)} />
         ))}
         </div>
     </div>
