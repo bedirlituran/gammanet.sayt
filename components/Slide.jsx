@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
 import { GoDotFill } from "react-icons/go";
 
-const App = () => {
+const Slide = () => {
  
   const slides = [
     { url: 'https://media.istockphoto.com/id/1392123667/photo/back-view-of-a-family-watching-tv-at-home.jpg?s=1024x1024&w=is&k=20&c=Wxd65-7am7pYfBz89jMzBuUMO502jTCb-8TMuDvOuis=' },
@@ -43,4 +43,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Slide

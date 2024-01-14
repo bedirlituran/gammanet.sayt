@@ -51,7 +51,7 @@ const Card = ({ icon, stat, orta, asagi }) => {
           </div>
           <div className="flex items-baseline justify-center gap-x-2">
             <p className="text-2xl font-normal tracking-tight text-gray-900">
-              <a href="#" className="material-symbols-outlined text-xl border-black group-hover:bg-white hover:border-b-2 group-hover:text-blue-500 group-hover:rounded-full transition-all duration-500">
+              <a href="www.youtube.com" className="material-symbols-outlined text-xl border-black group-hover:bg-white hover:border-b-2 group-hover:text-blue-500 group-hover:rounded-full transition-all duration-500">
                 {asagilar[asagi]}
               </a>
             </p>
