@@ -10,11 +10,11 @@ const Card3 = () => {
       </h1>
       <div>
         <Image
-          src="/image/xidmet2.png"
+          src="/image/xidmet2.webp"
           width={350}
           height={350}
           alt=""
-          objectFit="cover"
+        
           className="rounded-xl group-hover:scale-105  ease-in-out opacity-50 hover:opacity-100 transition duration-500"
         />
       </div>

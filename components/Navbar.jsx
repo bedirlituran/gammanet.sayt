@@ -16,15 +16,14 @@ const Navbar = () => {
   return (
     <>
       <div className=" file:flex items-center justify-between px-2 bg-white transition-colors duration-500  w-full h-18 sticky top-0 z-50">
-        <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-18 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95">
+        <nav className="flex justify-between items-center lg:flex  lg:justify-between  h-18 lg:items-center sticky top-0 p-2 uppercase font-bold space-x-2 min-w-full lg:text-sm  opacity-95 " >
           <div>
             <Image
-              src="/image/logo.png"
-              width="100"
-              height="100"
-              objectFit="cover"
-              alt=""
-              className="bg-transparent rounded-2xl flex items-center justify-center "
+              src="/image/logo.webp"
+              width={100}
+              height={100}
+              alt="alt"
+              className="bg-transparent object-cover rounded-2xl flex items-center justify-center "
             />
           </div>
           <div className="hidden lg:flex lg:items-center lg:justify-center">

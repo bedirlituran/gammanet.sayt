@@ -6,7 +6,7 @@ import { SiSmartthings } from "react-icons/si";
 import { MdOutlinePayments } from "react-icons/md";
 import Link from "next/link";
 
-const Card = ({ icon, stat, orta, asagi,link }) => {
+const Card = ({ icon, stat, orta, asagi,link,urlip }) => {
   const icons = {
     tv: <PiTelevisionSimpleBold size={70} color="red" />,
     internet: <FaInternetExplorer size={70} color="gray" />,
@@ -42,7 +42,7 @@ const Card = ({ icon, stat, orta, asagi,link }) => {
     gammatv: "/gammatv",
     million: "/million",
     gammaip: "/gammaip",
-    gamma: "/gamma",
+    gamma: "/Gamma",
     kanal: "/ChannelList",
     kompaniya: "/kompaniya",
     emanat: "/emanat",

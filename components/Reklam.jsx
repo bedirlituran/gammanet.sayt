@@ -8,11 +8,11 @@ const Reklam = () => {
         <div className="md:flex basis-1/2 justify-center items-center ">
           <Image
             src="/image/iptv.webp"
-            width="700"
-            height="700"
-            objectFit="cover"
+             width={700}
+            height={700}
+           
             quality={75}
-            alt=""
+            alt="alt"
             className="object-cover"
           />
         </div>
