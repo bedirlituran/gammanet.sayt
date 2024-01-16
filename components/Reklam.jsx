@@ -17,8 +17,8 @@ const Reklam = () => {
           />
         </div>
         <div className="lg:flex  basis-1/2 justify-center items-center flex-col space-y-8">
-          <p className="font-turan text-4xl font-bold text-green-950">Sizi düşünərək hazırladıq</p>
-          <h1 className="font-turan text-7xl font-bold text-green-950">IPTV<br></br><span className="font-turan text-7xl font-bold text-red-500 ">+++</span><br></br>İNTERNET</h1>
+          <p className="font-turan text-3xl  font-bold lg:text-5xl text-green-950">Sizi düşünərək hazırladıq</p>
+          <h1 className="font-turan text-xl font-bold text-green-950">IPTV<br></br><span className="font-turan text-3xl  font-bold lg:text-5xl text-red-500 ">+</span><br></br>İNTERNET</h1>
           <Button/>
         </div>
       </div>
