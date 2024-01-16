@@ -7,8 +7,8 @@ const Slide = () => {
  
   const slides = [
     { url: '/image/slide2.webp' },
-    { url: '/image/slide3.webp' },
     { url: '/image/slide1.webp' },
+    { url: '/image/slide3.webp' },
     
     
   ]
